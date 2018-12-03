@@ -1,2 +1,2 @@
 # Javascript
-First project using javascript bootstrap
+In this repository you will find all the useful methods of javascript
