@@ -114,17 +114,19 @@ const companies= [
 
          ///////////////////////////// SORT METHOD ////////////////////////////////////
 
-         const companyDate = companies.sort(function(res1 ,res2){
-          
-              if(res1.start > res2.start){
-                     return 1;
-              }
-              else{
-                     return -1;
-              }
+         /////// Sort Companies By Start year /////////////////////
+              // const companyDate = companies.sort(function(res1 ,res2){
+              
+              //        if(res1.start > res2.start){
+              //               return 1;
+              //        }
+              //        else{
+              //               return -1;
+              //        }
 
-         });
-         console.log(companyDate)
+              // });
+              // console.log(companyDate);
 
 
-          
+         const companyDate = companies.sort( (res1,res2) => (res1 >res2) ? 1: -1);
+         console.log(companyDate); 
