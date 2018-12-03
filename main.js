@@ -19,7 +19,7 @@ const companies= [
   }
 
   //FOR EACH LOOP
-  
+
           let company;
         companies.forEach(function(res){
        //    console.log(res);
@@ -31,14 +31,14 @@ const companies= [
        ////////  Using For Loop  //////////
 
        
-              let canDrink= [];
-              for(let i=0; i< ages.length; i++){
+              // let canDrink= [];
+              // for(let i=0; i< ages.length; i++){
 
-                if(ages[i] >= 21){
-                  canDrink.push(ages[i]);
+              //   if(ages[i] >= 21){
+              //     canDrink.push(ages[i]);
 
-                }
-              }
+              //   }
+              // }
 
               //   console.log(canDrink);
 
@@ -46,73 +46,85 @@ const companies= [
 
        ///////// For EACH  //////////
 
-       let canDrink = ages.filter( function(age){
-         if(age >= 21){
-           return true; 
-         }
-       });
+       // let canDrink = ages.filter( function(age){
+       //   if(age >= 21){
+       //     return true; 
+       //   }
+       // });
       // console.log(canDrink);
 
 
 
        ///  Arrow Function
 
-       let canDrink = ages.filter( age => age>=21);
+       // let canDrink = ages.filter( age => age>=21);
 
     //  console.log(canDrink);
 
      //////////////////////////////////////////  FILTER RETAIL COMPANY  ///////////////////////////////////////////////////////////////
 
-                const reatailCompany = companies.filter( function(company ){
-                  if(company.category === 'Retail'){
-                      return true;
-                  }
-                });
+              //   const reatailCompany = companies.filter( function(company ){
+              //     if(company.category === 'Retail'){
+              //         return true;
+              //     }
+              //   });
                 // console.log(reatailCompany);
                 
 
-        const reatailCompany = companies.filter(res => res.category === 'Retail');
+       //  const reatailCompany = companies.filter(res => res.category === 'Retail');
 
-        console.log(reatailCompany);
+       //  console.log(reatailCompany);
 
  /////////////////////////////////////// GET 80'S COMPANIES  ///////////////////////////////////////////////////////////////
  
-        const eightiesCompany = companies.filter(function(res){
-          if(res.start >= 1980 && res.start < 1990 ){
-            return true;
-          }
-        });
+       //  const eightiesCompany = companies.filter(function(res){
+       //    if(res.start >= 1980 && res.start < 1990 ){
+       //      return true;
+       //    }
+       //  });
 
         // console.log(eightiesCompany);
 
         ////////////////// Arrow Function  ///////////////////////
 
-        const eightiesCompany = companies.filter(res => (res.start >= 1980 && res.start < 1990));
+       //  const eightiesCompany = companies.filter(res => (res.start >= 1980 && res.start < 1990));
 
        //  console.log(eightiesCompany);
 
         ///////////////////////////// MAP ///////////////////////////////////
     
         
-          const companyName = companies.map( function(res){
-              return res.name;
-          });
+       //    const companyName = companies.map( function(res){
+       //        return res.name;
+       //    });
        //    console.log(companyName);
 
           ///// ARROW FUNCTION /////////
 
-          const companyName = companies.map(res => res.name);
+       //    const companyName = companies.map(res => res.name);
        //      console.log(companyName);
 
          ///////////// Company name Start and End date  /////////////////
          
-         const bitdata = companies.map(res => `${res.name} [${res.start }] - ${[res.end]}`);
+       //   const bitdata = companies.map(res => `${res.name} [${res.start }] - ${[res.end]}`);
        //   console.table(bitdata);
 
 
 
 
          ///////////////////////////// SORT METHOD ////////////////////////////////////
+
+         const companyDate = companies.sort(function(res1 ,res2){
+          
+              if(res1.start > res2.start){
+                     return 1;
+              }
+              else{
+                     return -1;
+              }
+
+         });
+         console.log(companyDate)
 
 
           
