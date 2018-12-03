@@ -1,13 +1,13 @@
 const companies= [
-    {name: "Company One", category: "Finance", start: 1981, end: 2004},
-    {name: "Company Two", category: "Retail", start: 1992, end: 2008},
-    {name: "Company Three", category: "Auto", start: 1999, end: 2007},
-    {name: "Company Four", category: "Retail", start: 1989, end: 2010},
-    {name: "Company Five", category: "Technology", start: 2009, end: 2014},
-    {name: "Company Six", category: "Finance", start: 1987, end: 2010},
+    {name: "AXIS", category: "Finance", start: 1981, end: 2004},
+    {name: "MORE", category: "Retail", start: 1992, end: 2008},
+    {name: "HONDA", category: "Auto", start: 1999, end: 2007},
+    {name: "EASYDAY", category: "Retail", start: 1989, end: 2010},
+    {name: "IBM", category: "Technology", start: 2009, end: 2014},
+    {name: "ICICI", category: "Finance", start: 1987, end: 2010},
     {name: "Company Seven", category: "Auto", start: 1986, end: 1996},
-    {name: "Company Eight", category: "Technology", start: 2011, end: 2016},
-    {name: "Company Nine", category: "Retail", start: 1981, end: 1989}
+    {name: "GOOGLE", category: "Technology", start: 2011, end: 2016},
+    {name: "SYS", category: "Retail", start: 1981, end: 1989}
   ];
   
   const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
@@ -89,3 +89,21 @@ const companies= [
 
         console.log(eightiesCompany);
 
+        ///////////////////////////// MAP ///////////////////////////////////
+    
+        
+       //    const companyName = companies.map( function(res){
+       //        return res.name;
+       //    });
+       //    console.log(companyName);
+
+          ///// ARROW FUNCTION /////////
+
+          const companyName = companies.map(res => res.name);
+            console.log(companyName);
+
+         ///////////// Company name Start and End date  /////////////////
+         
+         const bitdata = companies.map(res => `${res.name} [${res.start }] - ${[res.end]}`);
+         console.table(bitdata);
+          
