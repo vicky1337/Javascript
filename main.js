@@ -5,7 +5,7 @@ const companies= [
     {name: "EASYDAY", category: "Retail", start: 1989, end: 2010},
     {name: "IBM", category: "Technology", start: 2009, end: 2014},
     {name: "ICICI", category: "Finance", start: 1987, end: 2010},
-    {name: "Company Seven", category: "Auto", start: 1986, end: 1996},
+    {name: "BMW", category: "Auto", start: 1986, end: 1996},
     {name: "GOOGLE", category: "Technology", start: 2011, end: 2016},
     {name: "SYS", category: "Retail", start: 1981, end: 1989}
   ];
@@ -106,4 +106,11 @@ const companies= [
          
          const bitdata = companies.map(res => `${res.name} [${res.start }] - ${[res.end]}`);
          console.table(bitdata);
+
+
+
+
+         ///////////////////////////// SORT METHOD ////////////////////////////////////
+
+         
           
