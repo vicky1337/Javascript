@@ -146,4 +146,11 @@ const companies= [
 
        ////////////////////////////// REDUCE METHOD /////////////////////////////////////
 
+       let sumAge = 0;
+       for(i=0; i<ages.length; i++){
+           sumAge += ages[i];
+       }
+
+       console.log(sumAge);
+
        
