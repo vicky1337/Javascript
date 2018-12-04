@@ -145,12 +145,28 @@ const companies= [
 
 
        ////////////////////////////// REDUCE METHOD /////////////////////////////////////
+       
+       /// Normal way //////////
+                  // let sumAge = 0;
+                  // for(i=0; i<ages.length; i++){
+                  //     sumAge += ages[i];
+                  // }
 
-       let sumAge = 0;
-       for(i=0; i<ages.length; i++){
-           sumAge += ages[i];
-       }
+                  // console.log(sumAge);
+      
+       ///////// Using Reduce method ///////////
 
-       console.log(sumAge);
+                  // const ageSum = ages.reduce( function(total ,age){
+                  //     return total + age;
+                  // },0);
+                    
+                  // console.log(ageSum);
+
+         /////// Using Reduce + arrow function/////////
+
+         const ageSum = ages.reduce((total,age) => total + age , 0);
+         console.log(ageSum);
+
+       ///////// Get total years for all company ///////////
 
        
